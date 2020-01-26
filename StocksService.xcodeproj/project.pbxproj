@@ -19,6 +19,7 @@
 		BC536F5223DD6E3900EC4CE9 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC536F5123DD6E3900EC4CE9 /* Webservice.swift */; };
 		BC536F5523DD715900EC4CE9 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC536F5423DD715900EC4CE9 /* StockListViewModel.swift */; };
 		BC536F5723DD719800EC4CE9 /* StockVieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC536F5623DD719800EC4CE9 /* StockVieModel.swift */; };
+		BC536F5A23DE259300EC4CE9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC536F5923DE259300EC4CE9 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		BC536F5123DD6E3900EC4CE9 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		BC536F5423DD715900EC4CE9 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
 		BC536F5623DD719800EC4CE9 /* StockVieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockVieModel.swift; sourceTree = "<group>"; };
+		BC536F5923DE259300EC4CE9 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		BC536F1C23DD6CCE00EC4CE9 /* StocksService */ = {
 			isa = PBXGroup;
 			children = (
+				BC536F5823DE257C00EC4CE9 /* Views */,
 				BC536F5323DD711700EC4CE9 /* ViewModels */,
 				BC536F4E23DD6D6800EC4CE9 /* Services */,
 				BC536F4D23DD6D5B00EC4CE9 /* Model */,
@@ -170,6 +173,14 @@
 				BC536F5623DD719800EC4CE9 /* StockVieModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BC536F5823DE257C00EC4CE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC536F5923DE259300EC4CE9 /* SearchView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +318,7 @@
 				BC536F5523DD715900EC4CE9 /* StockListViewModel.swift in Sources */,
 				BC536F2023DD6CCE00EC4CE9 /* SceneDelegate.swift in Sources */,
 				BC536F5023DD6DB200EC4CE9 /* Stock.swift in Sources */,
+				BC536F5A23DE259300EC4CE9 /* SearchView.swift in Sources */,
 				BC536F5223DD6E3900EC4CE9 /* Webservice.swift in Sources */,
 				BC536F5723DD719800EC4CE9 /* StockVieModel.swift in Sources */,
 				BC536F2223DD6CCE00EC4CE9 /* ContentView.swift in Sources */,

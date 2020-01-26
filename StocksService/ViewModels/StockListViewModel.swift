@@ -9,13 +9,18 @@
 import Foundation
 
 class StockListViewModel: ObservableObject {
+    
+    //MARK: - PROPERTIES
     var searchTerm = ""
    @Published var stocks :[StockViewModel] = [StockViewModel]()
     
+    //MARK: - LOAD FUNCTION
     func load()  {
         fetchStock()
     }
     
+    
+      //MARK: - FETCHSTOCK FUNCTION
     func fetchStock( ) {
         
         Webservice().getStocks { stocks  in
