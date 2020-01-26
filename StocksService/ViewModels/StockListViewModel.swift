@@ -11,7 +11,7 @@ import Foundation
 class StockListViewModel: ObservableObject {
     
     //MARK: - PROPERTIES
-    var searchTerm = ""
+    @Published  var searchTerm = ""
    @Published var stocks :[StockViewModel] = [StockViewModel]()
     
     //MARK: - LOAD FUNCTION

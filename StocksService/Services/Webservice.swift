@@ -12,7 +12,7 @@ class Webservice  {
     
     func getStocks(completion: @escaping ( ([Stock]?) -> Void )) {
         
-        guard let url = URL(string: "https://cord-bubler.glitch.me/stocks") else {
+        guard let url = URL(string: "https://cord-bubbler.glitch.me/stocks") else {
             fatalError("Could Not Read the URL")
         }
         

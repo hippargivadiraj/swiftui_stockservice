@@ -10,6 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     
+    
+    @ObservedObject private var stocksListVM = StockListViewModel()
+    
+   
+    
     init(){
         UINavigationBar.appearance().backgroundColor = UIColor.black
         UINavigationBar.appearance().largeTitleTextAttributes = [
@@ -17,12 +22,16 @@ struct ContentView: View {
         ]
         UITableView.appearance().backgroundColor = UIColor.black
          UITableViewCell.appearance().backgroundColor = UIColor.black
+        stocksListVM.load()
         
     }
     
-    @State private var searchTerm: String = ""
+
+    
     var body: some View {
-        NavigationView{
+        
+        let filteredStocks = self.stocksListVM.searchTerm.isEmpty ? self.stocksListVM.stocks : self.stocksListVM.stocks.filter{$0.symbol.starts(with: self.stocksListVM.searchTerm)}
+       return  NavigationView{
             ZStack(alignment: .leading){
                 Color.black
                 Text("Jan 25 2020")
@@ -31,9 +40,12 @@ struct ContentView: View {
                     .foregroundColor(Color.gray)
                 .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
                     .offset(y: -400)
-                SearchView(searchTerm: self.$searchTerm)
+                
+                SearchView(searchTerm: self.$stocksListVM.searchTerm)
                     .offset(y: -350)
                 
+                StockListView(stocks: filteredStocks )
+                 .offset(y: 150)
                            
             }
             .navigationBarTitle("Stocks")

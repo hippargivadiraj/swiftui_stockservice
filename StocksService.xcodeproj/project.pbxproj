@@ -20,6 +20,7 @@
 		BC536F5523DD715900EC4CE9 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC536F5423DD715900EC4CE9 /* StockListViewModel.swift */; };
 		BC536F5723DD719800EC4CE9 /* StockVieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC536F5623DD719800EC4CE9 /* StockVieModel.swift */; };
 		BC536F5A23DE259300EC4CE9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC536F5923DE259300EC4CE9 /* SearchView.swift */; };
+		BC536F5C23DE2F0A00EC4CE9 /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC536F5B23DE2F0A00EC4CE9 /* StockListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		BC536F5423DD715900EC4CE9 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
 		BC536F5623DD719800EC4CE9 /* StockVieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockVieModel.swift; sourceTree = "<group>"; };
 		BC536F5923DE259300EC4CE9 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		BC536F5B23DE2F0A00EC4CE9 /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				BC536F5923DE259300EC4CE9 /* SearchView.swift */,
+				BC536F5B23DE2F0A00EC4CE9 /* StockListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				BC536F5023DD6DB200EC4CE9 /* Stock.swift in Sources */,
 				BC536F5A23DE259300EC4CE9 /* SearchView.swift in Sources */,
 				BC536F5223DD6E3900EC4CE9 /* Webservice.swift in Sources */,
+				BC536F5C23DE2F0A00EC4CE9 /* StockListView.swift in Sources */,
 				BC536F5723DD719800EC4CE9 /* StockVieModel.swift in Sources */,
 				BC536F2223DD6CCE00EC4CE9 /* ContentView.swift in Sources */,
 			);
