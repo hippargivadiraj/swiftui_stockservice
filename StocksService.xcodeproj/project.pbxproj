@@ -15,6 +15,10 @@
 		BC536F2A23DD6CD200EC4CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC536F2823DD6CD200EC4CE9 /* LaunchScreen.storyboard */; };
 		BC536F3523DD6CD200EC4CE9 /* StocksServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC536F3423DD6CD200EC4CE9 /* StocksServiceTests.swift */; };
 		BC536F4023DD6CD200EC4CE9 /* StocksServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC536F3F23DD6CD200EC4CE9 /* StocksServiceUITests.swift */; };
+		BC536F5023DD6DB200EC4CE9 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC536F4F23DD6DB200EC4CE9 /* Stock.swift */; };
+		BC536F5223DD6E3900EC4CE9 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC536F5123DD6E3900EC4CE9 /* Webservice.swift */; };
+		BC536F5523DD715900EC4CE9 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC536F5423DD715900EC4CE9 /* StockListViewModel.swift */; };
+		BC536F5723DD719800EC4CE9 /* StockVieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC536F5623DD719800EC4CE9 /* StockVieModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		BC536F3B23DD6CD200EC4CE9 /* StocksServiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksServiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC536F3F23DD6CD200EC4CE9 /* StocksServiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksServiceUITests.swift; sourceTree = "<group>"; };
 		BC536F4123DD6CD200EC4CE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC536F4F23DD6DB200EC4CE9 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		BC536F5123DD6E3900EC4CE9 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		BC536F5423DD715900EC4CE9 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
+		BC536F5623DD719800EC4CE9 /* StockVieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockVieModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,9 @@
 		BC536F1C23DD6CCE00EC4CE9 /* StocksService */ = {
 			isa = PBXGroup;
 			children = (
+				BC536F5323DD711700EC4CE9 /* ViewModels */,
+				BC536F4E23DD6D6800EC4CE9 /* Services */,
+				BC536F4D23DD6D5B00EC4CE9 /* Model */,
 				BC536F1D23DD6CCE00EC4CE9 /* AppDelegate.swift */,
 				BC536F1F23DD6CCE00EC4CE9 /* SceneDelegate.swift */,
 				BC536F2123DD6CCE00EC4CE9 /* ContentView.swift */,
@@ -134,6 +145,31 @@
 				BC536F4123DD6CD200EC4CE9 /* Info.plist */,
 			);
 			path = StocksServiceUITests;
+			sourceTree = "<group>";
+		};
+		BC536F4D23DD6D5B00EC4CE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC536F4F23DD6DB200EC4CE9 /* Stock.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC536F4E23DD6D6800EC4CE9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BC536F5123DD6E3900EC4CE9 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BC536F5323DD711700EC4CE9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BC536F5423DD715900EC4CE9 /* StockListViewModel.swift */,
+				BC536F5623DD719800EC4CE9 /* StockVieModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC536F1E23DD6CCE00EC4CE9 /* AppDelegate.swift in Sources */,
+				BC536F5523DD715900EC4CE9 /* StockListViewModel.swift in Sources */,
 				BC536F2023DD6CCE00EC4CE9 /* SceneDelegate.swift in Sources */,
+				BC536F5023DD6DB200EC4CE9 /* Stock.swift in Sources */,
+				BC536F5223DD6E3900EC4CE9 /* Webservice.swift in Sources */,
+				BC536F5723DD719800EC4CE9 /* StockVieModel.swift in Sources */,
 				BC536F2223DD6CCE00EC4CE9 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
